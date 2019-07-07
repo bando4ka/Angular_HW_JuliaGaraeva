@@ -7,13 +7,13 @@ class ToBinary{
 
     toSystem(){
         //dec - > binary (в бинарное число)
-        return (this.num).toString(2);
+        return this.num.toString(2);
         }
 
 
     fromSystem(){
         //string Binary -> dec (в десятичное)
-        return parseInt((this.num), 2);
+        return parseInt(this.num, 2);
     }
 }
 
@@ -26,7 +26,7 @@ class ToHexal {
 
     toSystem(){
         //decimal - > hex (в восьмиричное)
-        return  (this.num).toString(8);
+        return  this.num.toString(8);
     }
 
     fromSystem(){
@@ -43,7 +43,7 @@ class ToHexidecimal {
 
     toSystem(){
         //decimal - > hexdec (в 16-ричное)
-        return (this.num).toString(16);
+        return this.num.toString(16);
     }
 
     fromSystem(){
