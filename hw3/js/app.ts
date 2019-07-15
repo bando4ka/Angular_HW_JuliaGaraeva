@@ -24,7 +24,7 @@ namespace SuperHero{
         name: string,
         age: number,
         achievements: AchievementInterface[],
-        AddYearOfLife(): number,
+        AddYearOfLife(): any,
         AddAchievement(achievement: AchievementInterface):any
     }
     export class User implements UserInterface {
