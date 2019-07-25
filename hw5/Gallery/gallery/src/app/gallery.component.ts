@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { fromEvent } from 'rxjs'
 
 @Component({
   selector: 'gallery-component',
@@ -23,15 +24,34 @@ import { Component } from '@angular/core';
 <img width="500" src='http://www.fototet.ru/attachments/Image/Raskrashivanie.jpg?template=generic'/><br/>
 
 </article>
-<button (click)='alertAfter4Clickes()'>Alert after 4 clicks</button>
+<p>
+<button type='button' id='btn'>Click me (Var.1)</button>
+</p>
+<p>
+<button type='button' (click)="clicked(true)">Click me too (Var.2)</button>
+</p>
   `
 
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit {
   title = 'Gallery';
+  constructor() {}
+  public someClick:number = 0;
+public ngOnInit(): void {
+  const elementBtn = document.getElementById('btn');
+  const clickMouse = fromEvent(elementBtn, 'click');
+  clickMouse.subscribe((e: MouseEvent) => {
+      this.someClick++;
+      if(this.someClick === 4) {
+        alert('The button was clicked 4 times (Var.1)');
+        this.someClick = 0;
+      }
+  });
+  }
 
-public alertAfter4Clickes(): void {
-alert('This button was clicked 4 times')
-  // console.log('clicked');
-}
+  @Output()
+  onClicked = new EventEmitter<boolean>();
+  clicked(clickOn:any) {
+      this.onClicked.emit(clickOn);
+  }
 }
