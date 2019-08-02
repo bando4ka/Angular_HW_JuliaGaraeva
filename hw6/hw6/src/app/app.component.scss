@@ -1,0 +1,39 @@
+.container {
+    width: 750px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    color: #1247a8;
+    font-size: 250%;
+  }
+
+
+  h3 {
+    text-align: center;
+    border: 2px dashed grey;
+    padding: 20px 5px;
+  }
+
+  .inputImgUrl {
+    text-align: center;
+  }
+
+  .inputImgUrl input {
+    color: gray;
+    width: 600px;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .picture img {
+    width: 750px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .header img {
+    background-size:contain;
+    width: 100%;
+  }
