@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>{{title}}</h1>
+
+<div class="container">
+    <h4>#1 Write a pipe code that will translate letters in the input into morse code symbols.</h4>
+    <div class="morseBox">
+      <h3>MORSE CODE</h3>
+        <input [(ngModel)]='text' placeholder="Please type your message here (English)"/>
+        <p>Morse Code:</p>
+        <p>{{text | morsecode }}</p>
+    </div>
+
+    <h4>#2 Create a component that displays the clock. Time data must be in the child component.</h4>
+
+    <div class="clockBox">
+      <app-clock></app-clock>
+    </div>
+</div>
