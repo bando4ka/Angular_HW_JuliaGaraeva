@@ -1,0 +1,41 @@
+    .clockBox p {
+        margin:  0;
+        padding: 0;
+        display: block;
+        /* margin-block-start: 1em;
+        margin-block-end: 1em; */
+    }
+
+    #clock {
+        font-family: 'Share Tech Mono', monospace;
+        color: #ffffff;
+        text-align: center;
+        /* position: relative; */
+        /* bottom: 50%;
+        right: 50%; */
+        /* transform: translate(50%, 50%); */
+        color: #daf6ff;
+        text-shadow: 0 0 20px #0aafe6,  0 0 20px #0aafe600;
+        padding: 0 0 5px 0;
+    }
+
+    .time {
+        letter-spacing: 0.03em;
+        font-size: 80px;
+        padding: 5px 0;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    .date {
+        letter-spacing: 0.1em;
+        font-size: 24px;
+    }
+
+
+    .text {
+        letter-spacing: 1.5em;
+        font-size: 16px;
+        padding: 20px 0 0;
+        color: #00aeff;
+    }

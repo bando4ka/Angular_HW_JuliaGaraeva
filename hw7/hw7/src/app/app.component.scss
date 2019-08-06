@@ -1,0 +1,64 @@
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    h1{
+        text-align: center;
+        letter-spacing: 0.5em;
+        font-size: 16px;
+        color: #049de4;
+        font-size: 36px;
+        padding: 20px 0;
+        font-family: 'Share Tech Mono', monospace;
+    }
+
+    h3 {
+        letter-spacing: 1.5em;
+        font-size: 16px;
+        color: #00aeff;
+        font-family: 'Share Tech Mono', monospace;
+    }
+
+    h4 {
+        text-align: center;
+        padding: 20px 5px;
+        font-family: 'Share Tech Mono', monospace;
+      }
+
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .morseBox {
+        // font-family: 'Share Tech Mono', monospace;
+        background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+        padding: 10px;
+    }
+
+    .clockBox {
+        background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+        text-align: center;
+    }
+
+    .morseBox input {
+        border-radius: 4px;
+        border: 1px solid gray;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: gray;
+        margin: 15px 0;
+        }
+
+        .morseBox p {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 24px;
+            color: #daf6ff;
+            padding: 5px;
+            margin-block-start: 0em;
+            margin-block-end: 15px;
+        }
