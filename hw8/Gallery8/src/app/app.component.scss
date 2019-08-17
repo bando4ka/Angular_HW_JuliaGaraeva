@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+.container {
+    width: 750px;
+    margin: auto;
+    }
+
+    
+  h1 {
+    text-align: center;
+    color: #1247a8;
+    font-size: 250%;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  h3 {
+    text-align: center;
+    border: 2px dashed grey;
+    padding: 20px 5px;
+  }
+
+  .picture img {
+    width: 750px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .header img {
+    background-size:contain;
+    width: 100%;
+  }
