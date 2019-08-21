@@ -1,0 +1,160 @@
+.btnAddImage {
+    // border: 1px solid #ccc;
+    border-radius: 4px;
+    // display: inline-block;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px 10px;
+    color: white;
+    background: #1552c4ee;
+    box-shadow: 0 5px 0 #1247a8;
+    transition: .3s;
+    border: none;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .btnAddImage:hover {
+    background: #1b5dd8;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: #1247a8;
+    font-size: 200%;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+input {
+    color: gray;
+    width: 90%;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .galleryGridBlock3 {
+    display: grid;
+    // grid-template-columns: 180px 180px 180px 180px;
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+    grid-gap: 10px;
+    margin: 20px 0px 20px 0px;
+    overflow: hidden;
+  }
+
+  .galleryGridBlock3 img {
+    width: 180px;
+    height: 120px;
+  }
+
+  .selectedPicture3 {
+    position: relative;
+    width: 750px;
+    height: 480px;
+    overflow: hidden;
+  }
+
+  .selectedPicture3 img {
+    text-align: center;
+    position: absolute;
+    width: 750px;
+    height: 480px;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  .polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  }
+
+  .polaroid > img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .item {
+    width: 90%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+  }
+  .item .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(2n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(2n+1) .polaroid:before {
+    transform: rotate(6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  }
+  .item:nth-of-type(2n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(2n+2) .polaroid:before {
+    transform: rotate(-6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  }
+
+  .item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;
+  }
+  .item:hover .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+  }
+
+  .like{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center
+  }
+
+  .heart{
+    align-self: center;
+    color: #aab8c2;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .heart:hover{
+    align-self: center;
+    color: #e2264d;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 0.35s;
+  }
