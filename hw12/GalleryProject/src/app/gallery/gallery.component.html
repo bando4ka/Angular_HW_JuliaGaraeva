@@ -2,7 +2,7 @@
         <div class="bigImage">
             <img [src]="SelectedPicture"  alt="img" width='750px' height='480px'/>
         </div>
-        <button class="btnClose" (click)="closeBigImage()">Close X</button>
+        <button class="btnClose unselectable" (click)="closeBigImage()">Close X</button>
    </div>
 
 
@@ -12,7 +12,7 @@
                 <img [src]="el.pathPic"/>
                 <p>{{el.date | date:'HH:mm:ss dd-MM-yyyy'}}</p>
                 <div class=like>
-                    <a (click)="like($event)" class="heart" style="cursor: pointer; font-size: 150%;">❤</a>
+                    <a (click)="like($event)" class="heart unselectable" style="cursor: pointer; font-size: 150%;">❤</a>
                     <p style="font-size: 20px;">0</p>
                 </div>
             </div>

@@ -2,7 +2,7 @@
     <date-component></date-component>
     <h2>Uploading images using image URL-address</h2>
 <input name='title' [(ngModel)]='url' placeholder='Enter image URL-address'/>
-<button class="btnAddImage" (click)='addPicture()'> Add picture </button>
+<button class="btnAddImage unselectable" (click)='addPicture()'> Add picture </button>
 
         <div class="selectedPicture3">
                 <img [src]="SelectedPicture3"  alt="img" width='750px' height='480px'/>
@@ -13,7 +13,7 @@
                     <img [src] = [(pic.url)]/>
                     <p>From: {{pic.date | date:'HH:mm:ss dd-MM-yyyy EEEE'}}</p>
                     <div class=like>
-                        <a (click)="like($event)"  class="heart" style="cursor: pointer; font-size: 150%;">❤</a>
+                        <a (click)="like($event)"  class="heart unselectable" style="cursor: pointer; font-size: 150%;">❤</a>
                         <p style="font-size: 20px;">0</p>
                 </div>
             </div>
