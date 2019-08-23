@@ -1,0 +1,20 @@
+    <div class="selectedPicture disabled">
+        <div class="bigImage">
+            <img [src]="SelectedPicture"  alt="img" width='750px' height='480px'/>
+        </div>
+        <button class="btnClose unselectable" (click)="closeBigImage()">Close X</button>
+   </div>
+
+
+    <div class="galleryGridBlock" >
+        <div class="item" *ngFor="let el of arrPictures">
+            <div class="polaroid">
+                <img [src]="el.pathPic"/>
+                <p>{{el.date | date:'HH:mm:ss dd-MM-yyyy'}}</p>
+                <div class=like>
+                    <a (click)="like($event)" class="heart unselectable" style="cursor: pointer; font-size: 150%;">❤</a>
+                    <p style="font-size: 20px;">0</p>
+                </div>
+            </div>
+        </div>
+    </div>

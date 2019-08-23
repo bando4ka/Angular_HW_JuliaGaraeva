@@ -1,0 +1,139 @@
+h3 {
+    text-align: center;
+    border: 2px dashed grey;
+    padding: 20px 5px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #1247a8;
+    font-size: 200%;
+  }
+
+  .galleryGridBlock {
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px;
+    justify-content: center;
+    grid-gap: 10px;
+    margin: 20px 0px 20px 0px;
+    overflow: hidden;
+  }
+
+  .galleryGridBlock img {
+    width: 180px;
+    height: 120px;
+  }
+
+  input[type="file"] {
+    display: none;
+}
+
+.fileContainer {
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 35px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 0;
+  color: white;
+  background: #1552c4ee;
+  box-shadow: 0 5px 0 #1247a8;
+  transition: .3s;
+}
+
+.fileContainer:hover {
+  background: #1b5dd8;
+}
+
+.btnAddImage {
+  border-radius: 4px;
+  padding: 15px 35px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px 10px;
+  color: white;
+  background: #1552c4ee;
+  box-shadow: 0 5px 0 #1247a8;
+  transition: .3s;
+  border: none;
+}
+
+.btnAddImage:hover {
+  background: #1b5dd8;
+}
+
+h3 {
+  text-align: center;
+  border: 2px dashed grey;
+  padding: 20px 5px;
+}
+
+h2 {
+  text-align: center;
+  color: #1247a8;
+  font-size: 200%;
+}
+
+.galleryGridBlock {
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px;
+  justify-content: center;
+  grid-gap: 10px;
+  margin: 20px 0px 20px 0px;
+  overflow: hidden;
+}
+
+.galleryGridBlock img {
+  width: 180px;
+  height: 120px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.fileContainer {
+border-radius: 4px;
+display: inline-block;
+cursor: pointer;
+padding: 15px 35px;
+font-size: 20px;
+text-decoration: none;
+margin: 20px 0;
+color: white;
+background: #1552c4ee;
+box-shadow: 0 5px 0 #1247a8;
+transition: .3s;
+}
+
+.fileContainer:hover {
+background: #1b5dd8;
+}
+
+.btnAddImage {
+border-radius: 4px;
+padding: 15px 35px;
+cursor: pointer;
+font-size: 20px;
+margin: 20px 10px;
+color: white;
+background: #1552c4ee;
+box-shadow: 0 5px 0 #1247a8;
+transition: .3s;
+border: none;
+}
+
+.btnAddImage:hover {
+background: #1b5dd8;
+}
+
+.unselectable {
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none;   /* Chrome/Safari/Opera */
+-khtml-user-select: none;    /* Konqueror */
+-moz-user-select: none;      /* Firefox */
+-ms-user-select: none;       /* Internet Explorer/Edge */
+user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+}
