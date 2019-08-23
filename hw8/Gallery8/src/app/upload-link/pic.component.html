@@ -1,0 +1,15 @@
+<div class=center>
+    <h2>Uploading images using image URL-address</h2>
+<input name='title' [(ngModel)]='picture.title' placeholder='Enter image URL-address'/>
+<button class="btnAddImage" (click)='addPicture()'> Add picture </button>
+
+        <div class="selectedPicture3">
+                <img [src]="SelectedPicture3"  alt="img" width='750px' height='480px'/>
+        </div>
+        <div class ="galleryGridBlock3">
+            <div *ngFor='let pic of pictures'>
+                <img [src] = [(pic.title)]/>
+            </div>
+        </div>
+
+</div>

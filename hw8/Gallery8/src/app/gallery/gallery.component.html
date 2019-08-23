@@ -1,0 +1,12 @@
+<div class="container">
+
+     <div class="selectedPicture">
+         <img [src]="SelectedPicture"  alt="img" width='750px' height='480px'/>
+    </div>
+
+    <div class="galleryGridBlock" >
+        <div *ngFor="let el of arrPictures">
+            <img  [src]="el.urlPic"/>
+        </div>
+    </div>
+</div>
